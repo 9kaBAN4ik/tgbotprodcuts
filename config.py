@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Основные настройки
-TOKEN = os.getenv("BOT_TOKEN")  # Токен бота
+TOKEN = 7603557120:AAG_0lYTLV76s2ogSL9vq-2XcRS6tMFpjUw  # Токен бота
 DB_PATH = os.getenv("DB_PATH", "data/database.db")  # Путь к базе данных, по умолчанию data/database.db
 
 # Настройки для реферальной системы
