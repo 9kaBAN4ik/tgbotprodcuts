@@ -1,0 +1,28 @@
+<!-- adminpanel/templates/adminpanel/product_list.html -->
+{% extends 'adminpanel/base.html' %}
+
+{% block content %}
+    <div class="product-list">
+        <h2>Список Продуктов</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Описание</th>
+                    <th>Цена</th>
+                    <th>Дата добавления</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                    <tr>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.description }}</td>
+                        <td>${{ product.price }}</td>
+                        <td>{{ product.created_at }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
